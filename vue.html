@@ -11,6 +11,13 @@
 <body>
 <div id="app">
     {{ message }}
+    <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+      <input type="text" v-model="message">
+      <button type="submit" v-on:click="submit">On Click</button>
 </div>
 
 
@@ -19,8 +26,18 @@
     var app = new Vue({
         el: '#app',
         data: {
-        message: 'Hello World!'
+        message: 'Hello World!',
+            todos: [
+            { text: 'Learn JavaScript' },
+            { text: 'Learn Vue' },
+            { text: 'Build something awesome' }
+            ]
+        },
+        methods: {
+        submit: function () {
+            console.log(this.message);
         }
+  }
     })
 </script>
 </body>
