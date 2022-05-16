@@ -1,0 +1,69 @@
+{
+    "data": {
+        "time": {
+            "updated": "May 9, 2022 21:45:00 UTC",
+            "updatedISO": "2022-05-09T21:45:00+00:00",
+            "updateduk": "May 9, 2022 at 22:45 BST"
+        },
+        "disclaimer": "This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org",
+        "chartName": "Bitcoin",
+        "bpi": {
+            "USD": {
+                "code": "USD",
+                "symbol": "&#36;",
+                "rate": "31,466.1343",
+                "description": "United States Dollar",
+                "rate_float": 31466.1343
+            },
+            "GBP": {
+                "code": "GBP",
+                "symbol": "&pound;",
+                "rate": "25,607.4233",
+                "description": "British Pound Sterling",
+                "rate_float": 25607.4233
+            },
+            "EUR": {
+                "code": "EUR",
+                "symbol": "&euro;",
+                "rate": "29,933.6707",
+                "description": "Euro",
+                "rate_float": 29933.6707
+            }
+        }
+    },
+    "status": 200,
+    "statusText": "",
+    "headers": {
+        "cache-control": "max-age=15",
+        "content-length": "677",
+        "content-type": "application/javascript",
+        "expires": "Mon, 09 May 2022 21:46:07 UTC"
+    },
+    "config": {
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        },
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "env": {
+            "FormData": null
+        },
+        "headers": {
+            "Accept": "application/json, text/plain, */*"
+        },
+        "method": "get",
+        "url": "https://api.coindesk.com/v1/bpi/currentprice.json"
+    },
+    "request": {}
+}
